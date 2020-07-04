@@ -7,3 +7,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://euk1:8082/eureka,http://euk1:8083/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: beans,conditions,env,info,threaddump,httptrace
