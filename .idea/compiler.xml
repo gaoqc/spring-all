@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="consumer" />
         <module name="spring-all" />
         <module name="user-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consumer" target="1.8" />
       <module name="spring-all" target="1.8" />
       <module name="user-prodvier" target="1.8" />
       <module name="user-provider" target="1.8" />
@@ -18,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer" options="-parameters" />
       <module name="spring-all" options="-parameters" />
       <module name="user-prodvier" options="-parameters" />
       <module name="user-provider" options="-parameters" />
