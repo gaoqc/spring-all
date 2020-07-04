@@ -477,3 +477,8 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2020-07-04 23:50:37.435  INFO 30884 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
 2020-07-04 23:50:41.347  INFO 30884 --- [nio-8082-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.31.180:user-provider:8088 with status DOWN (replication=true)
 2020-07-04 23:50:44.409  INFO 30884 --- [nio-8082-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USER-PROVIDER/192.168.31.180:user-provider:8088 (replication=true)
+2020-07-04 23:51:37.439  INFO 30884 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-04 23:52:06.732  INFO 30884 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-04 23:52:37.440  INFO 30884 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-04 23:53:37.442  INFO 30884 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-04 23:54:17.599  INFO 30884 --- [nio-8082-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.31.180:user-provider:8088 with status UP (replication=true)

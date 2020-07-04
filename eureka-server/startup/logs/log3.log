@@ -536,3 +536,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 2020-07-04 23:50:37.388  INFO 30885 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
 2020-07-04 23:50:40.837  INFO 30885 --- [nio-8083-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.31.180:user-provider:8088 with status DOWN (replication=false)
 2020-07-04 23:50:43.895  INFO 30885 --- [io-8083-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USER-PROVIDER/192.168.31.180:user-provider:8088 (replication=false)
+2020-07-04 23:51:37.391  INFO 30885 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-04 23:52:06.732  INFO 30885 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-04 23:52:37.395  INFO 30885 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-04 23:53:37.395  INFO 30885 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-04 23:54:17.082  INFO 30885 --- [nio-8083-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.31.180:user-provider:8088 with status UP (replication=false)
