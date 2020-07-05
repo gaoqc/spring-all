@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.net.URI;
 
 @RestController
 public class ConsumerController {
@@ -15,7 +16,8 @@ public class ConsumerController {
     @Resource
     private LoadBalancerClient lb;
 
-
+    @Resource
+    private  RestTemplate template;
 
 
     @GetMapping("/v1/con/user/{id}")
@@ -29,7 +31,8 @@ public class ConsumerController {
 //                }
 //        );
          ServiceInstance  instance=lb.choose("user-provider");
-         return  new RestTemplate().getForObject(instance.getUri()+"/v1/user/"+id,String.class);
+         String uri=instance.getUri().toString();
+         return  template.getForObject(uri.toString()+"/v1/user/"+id,String.class);
 //        return  map;
 
 //        return template.getForObject("http://localhost:8088/v1/user/"+id,String.class);
