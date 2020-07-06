@@ -1,4 +1,8 @@
 logs
 *.log
 .idea
-
+spring-all.iml
+.DS_Store
+mvnw
+*.iml
+mvnw.cmd
