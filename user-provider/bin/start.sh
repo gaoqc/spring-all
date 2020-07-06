@@ -4,7 +4,7 @@ cd ../
 mvn package -Dmaven.test.skip=true
 cd bin
 #2.杀掉现有进程
-kill -9 `jps -m | grep user-provider-1.0.0.jar|awk '{print $1}'`
+#kill -9 `jps -m | grep user-provider-1.0.0.jar|awk '{print $1}'`
 #3.删除当前包
 rm user-provider-1.0.0.jar
 #4.cp 最新包
