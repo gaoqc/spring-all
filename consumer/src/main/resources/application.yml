@@ -11,7 +11,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: beans,conditions,env,info,threaddump,httptrace
+        include: beans,conditions,env,info,threaddump,httptrace,hystrix.stream
 
 #ribbon 默认使用RoundRobinRule轮询算法来负载均衡，可以通过以下配置修改
 #负载均衡算法都需要实现IRule 接口
