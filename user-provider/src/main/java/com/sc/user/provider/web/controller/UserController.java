@@ -19,7 +19,7 @@ public class UserController {
         return "getName,port:"+port;
     }
     @PostMapping("/v1/user/info/name/{id}")
-    public String setName(@PathVariable("id")String id, @RequestParam("name")String name){
+    public Object setName(@PathVariable("id")String id, @RequestParam("name")String name){
         System.out.println("id:"+id+" set name:"+name);
         return "setName,port:"+port;
     }
