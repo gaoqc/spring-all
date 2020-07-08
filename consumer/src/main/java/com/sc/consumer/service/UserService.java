@@ -12,7 +12,7 @@ public interface UserService {
     @GetMapping("/v1/user/info/name/{id}")
     String   getName(@PathVariable("id") String id);
     @PostMapping("/v1/user/info/name/{id}")
-  
+
     String   setName(@PathVariable("id")String id, @RequestParam("name")String name);
 
 }
