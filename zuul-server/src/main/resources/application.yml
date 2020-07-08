@@ -7,3 +7,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://euk1:8082/eureka,http://euk1:8083/eureka
+zuul:
+  prefix: /api/v1/
+#  strip-prefix: true
