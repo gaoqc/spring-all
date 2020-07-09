@@ -8,6 +8,10 @@ spring:
   sleuth:
     sampler:
       rate: 1
+  boot:
+    admin:
+      client:
+        url:  http://127.0.0.1:8099/
 eureka:
   client:
     service-url:
@@ -16,7 +20,9 @@ management:
   endpoints:
     web:
       exposure:
-        include: beans,conditions,env,info,threaddump,httptrace,hystrix.stream
+        include: beans,conditions,env,info,threaddump,httptrace,hystrix.stream,status,health
+#  health:
+#    show-details: always
 
 #ribbon 默认使用RoundRobinRule轮询算法来负载均衡，可以通过以下配置修改
 #负载均衡算法都需要实现IRule 接口

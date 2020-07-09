@@ -6,6 +6,10 @@ spring:
   sleuth:
     sampler:
       rate: 1
+  boot:
+    admin:
+      client:
+        url:  http://127.0.0.1:8099/
 server:
   port: 80
 eureka:
@@ -15,3 +19,8 @@ eureka:
 zuul:
   prefix: /api/v1/
 #  strip-prefix: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: beans,conditions,env,info,threaddump,httptrace,hystrix.stream,status,health

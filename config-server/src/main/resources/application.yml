@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: git@github.com:gaoqc/spring-all.git
+eureka:
+  client:
+    service-url:
+      defaultZone: http://euk1:8082/eureka,http://euk1:8083/eureka
+server:
+  port: 9999
