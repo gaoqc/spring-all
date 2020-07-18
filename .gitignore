@@ -3,3 +3,8 @@ logs
 .idea
 *.class
 .DS_Store
+spring-all.iml
+.DS_Store
+mvnw
+*.iml
+mvnw.cmd
